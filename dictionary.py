@@ -81,3 +81,49 @@ print(stu_data4.items())
 
 # get() we use get in order to get a value when you mention key we can do it calling key but when there is no key it gives an error but by get method we wont get an error instead a none value
 print(stu_data4.get('subject'))
+
+
+# DICTIONARY ITERATIONS
+
+stu_data5 = {
+    'name': 'niranjan',
+    'age': 21,
+    'gender': 'male'
+}
+
+# using keys and printing only keys
+for key in stu_data5:
+    print(key)
+
+# using values and printing values
+for value in stu_data5:
+    print(stu_data5[value])
+
+# using keys() method
+for keys in stu_data5.keys():
+    print(keys)
+
+# using values() method
+for values in stu_data5.values():
+    print(values)
+
+# To print both (key,value) pair
+for keys, values in stu_data5.items():
+    print(keys, ":", values)
+
+# NESTED DICTIONARY
+students_data = {
+    'student1': {'name': 'niranjan', 'age': 21, 'gender': 'male'},
+    'student2': {'name': 'arjun', 'age': 21, 'gender': 'male'}
+}
+
+# accessing values
+print(students_data['student1'])
+
+# DICTIONARY COMPREHENSION
+# Syntax
+# new_dict=
+# {key expresion: value expression for item in iterable if condition}
+
+my_dict = {x: x*x for x in range(1, 6)}
+print(my_dict)
