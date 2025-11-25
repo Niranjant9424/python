@@ -1,9 +1,10 @@
-# Tuple packing and unpacking
+# Tuple packing
 a = "niranjan"
 b = 21
 c = "doctor"
 tuple_pack = a, b, c
 print(tuple_pack)
+# tuple unpacking
 name, age, profession = tuple_pack
 print(name)
 print(age)
