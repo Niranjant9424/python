@@ -79,7 +79,7 @@ print(stu_data4.values())
 # items()
 print(stu_data4.items())
 
-# get() we use get in order to get a value when you mention key we can do it calling key but when there is no key it gives an error but by get method we wont get an error instead a none value
+# get() basically to get a value we use get method it is similar to key but when the specified key is absent it raises an error but by get method it wont raise an error
 print(stu_data4.get('subject'))
 
 
